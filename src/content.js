@@ -59,7 +59,7 @@ export const content = {
     facts: [
       { label: 'Location', value: 'Melbourne, AU' },
       { label: 'Education', value: 'M.DataSc, Deakin University' },
-      { label: 'Languages', value: 'English · Hindi · Malayalam' },
+      { label: 'Languages', value: 'English · Hindi · Malayalam · Japanese (conversational)' },
       { label: 'Status', value: 'Open to data roles' },
     ],
     skills: [

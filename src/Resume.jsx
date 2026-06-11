@@ -22,9 +22,11 @@ export default function Resume() {
         <a href="./" className="link-line font-mono text-[0.7rem] tracking-[0.2em] uppercase text-muted hover:text-ink">
           ← Back to the site
         </a>
+        {/* window.print() is a dead end on touch devices (iOS Safari ignores it),
+            so the button only shows where a real print dialog exists */}
         <button
           onClick={() => window.print()}
-          className="cursor-pointer border border-line bg-paper px-5 py-2.5 font-mono text-[0.7rem] tracking-[0.2em] uppercase text-ink transition-colors hover:border-ember hover:text-ember"
+          className="hidden cursor-pointer border border-line bg-paper px-5 py-2.5 font-mono text-[0.7rem] tracking-[0.2em] uppercase text-ink transition-colors hover:border-ember hover:text-ember [@media(pointer:fine)]:block"
         >
           Download PDF
         </button>
