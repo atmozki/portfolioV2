@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; box-sizing: border-box; }
+  body {
+    width: 1200px; height: 630px; overflow: hidden;
+    background: #f4f1ea; color: #171410;
+    display: flex; flex-direction: column; justify-content: space-between;
+    padding: 64px 72px;
+    font-family: 'Fraunces', Georgia, serif;
+  }
+  .mono { font-family: 'JetBrains Mono', monospace; font-size: 17px; letter-spacing: 0.25em; text-transform: uppercase; color: #6f695e; }
+  .top { display: flex; justify-content: space-between; align-items: center; }
+  .dot { display: inline-block; width: 10px; height: 10px; border-radius: 99px; background: #b6410f; margin-right: 12px; vertical-align: 1px; }
+  .open { color: #b6410f; }
+  h1 { font-weight: 330; font-size: 118px; line-height: 0.98; letter-spacing: -0.015em; }
+  .tag { font-style: italic; font-weight: 320; font-size: 44px; color: #b6410f; margin-top: 26px; }
+  .bottom { display: flex; justify-content: space-between; align-items: baseline; border-top: 1px solid #d9d3c6; padding-top: 26px; }
+</style>
+</head>
+<body>
+  <div class="top">
+    <span class="mono">Data Science &middot; Melbourne, Australia</span>
+    <span class="mono open"><span class="dot"></span>Open to work</span>
+  </div>
+  <div>
+    <h1>Dennis Jojo<br>Kuriakose</h1>
+    <div class="tag">Making data make sense.</div>
+  </div>
+  <!-- no URL baked in: the card survives a domain change untouched -->
+  <div class="bottom">
+    <span class="mono">Data Science Portfolio</span>
+    <span class="mono">Melbourne &middot; 2026</span>
+  </div>
+</body>
+</html>

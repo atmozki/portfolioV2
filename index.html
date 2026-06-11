@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4f1ea" />
+    <script>
+      /* apply saved theme before first paint to avoid a light flash */
+      try { if (localStorage.theme === 'dark') document.documentElement.classList.add('dark') } catch (e) {}
+    </script>
+
+    <title>Dennis Jojo Kuriakose · Data Science</title>
+    <meta name="description" content="Dennis Jojo Kuriakose, data science graduate in Melbourne. Machine learning, statistics, and a published research paper. Open to data roles." />
+    <meta name="author" content="Dennis Jojo Kuriakose" />
+    <meta property="og:title" content="Dennis Jojo Kuriakose · Data Science" />
+    <meta property="og:description" content="Data science graduate in Melbourne. Making data make sense." />
+    <meta property="og:type" content="website" />
+    <!-- canonical URL comes from VITE_SITE_URL in .env -->
+    <meta property="og:url" content="%VITE_SITE_URL%/" />
+    <meta property="og:image" content="%VITE_SITE_URL%/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="%VITE_SITE_URL%/og.png" />
+
+    <link rel="canonical" href="%VITE_SITE_URL%/" />
+    <!-- structured data so search engines understand who this site is about -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Dennis Jojo Kuriakose",
+        "jobTitle": "Data Scientist",
+        "url": "%VITE_SITE_URL%/",
+        "email": "mailto:me@dennisjojok.com",
+        "address": { "@type": "PostalAddress", "addressLocality": "Melbourne", "addressCountry": "AU" },
+        "alumniOf": [
+          { "@type": "CollegeOrUniversity", "name": "Deakin University" },
+          { "@type": "CollegeOrUniversity", "name": "APJ Abdul Kalam Technological University" }
+        ],
+        "sameAs": ["https://github.com/atmozki", "https://www.linkedin.com/in/dennisjk/"]
+      }
+    </script>
+
+    <!-- Fraunces (display serif) + Inter (body) + JetBrains Mono (labels) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter:wght@100..900&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
