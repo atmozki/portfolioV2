@@ -17,7 +17,7 @@ export const content = {
   },
 
   links: {
-    email: 'me@dennisjojok.com',
+    email: 'dennisjojok@gmail.com',
     github: 'https://github.com/atmozki',
     linkedin: 'https://www.linkedin.com/in/dennisjk/',
     resume: './resume.html', // the PDF-style resume page (print it for an actual PDF)
