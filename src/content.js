@@ -1,6 +1,7 @@
 /* ============================================================
    PORTFOLIO CONTENT: edit this one file to change the site.
    ============================================================ */
+import melbourneImg from './assets/work/melbourne-on-foot.png'
 import goldefiImg from './assets/work/goldefi.jpg'
 import mbtiImg from './assets/work/mbti.jpg'
 import crtImg from './assets/work/crt.jpg'
@@ -72,6 +73,16 @@ export const content = {
   /* selected work: rows link to `href`.
      Order matters: strongest data-science signal first. */
   works: [
+    {
+      title: 'Melbourne on Foot',
+      kind: 'Data engineering',
+      year: '2026',
+      desc: 'Pedestrian traffic across the Melbourne CBD: a Python ingestion pipeline, tested dbt models on DuckDB, and a Streamlit dashboard that refreshes itself nightly.',
+      tags: ['Python', 'dbt + DuckDB', 'Streamlit'],
+      href: 'https://melbourne-on-foot-atmozki.streamlit.app',
+      cta: 'Open the dashboard',
+      img: melbourneImg,
+    },
     {
       title: 'MBTI Personality Predictor',
       kind: 'Machine learning',
