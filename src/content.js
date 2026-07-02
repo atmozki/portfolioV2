@@ -75,10 +75,10 @@ export const content = {
   works: [
     {
       title: 'Melbourne on Foot',
-      kind: 'Data engineering',
+      kind: 'Data engineering + ML',
       year: '2026',
-      desc: 'Pedestrian traffic across the Melbourne CBD: a Python ingestion pipeline, tested dbt models on DuckDB, and a Streamlit dashboard that refreshes itself weekly.',
-      tags: ['Python', 'dbt + DuckDB', 'Streamlit'],
+      desc: 'Pedestrian traffic across the Melbourne CBD, end to end: a Python ingestion pipeline, tested dbt models on DuckDB, a LightGBM model that forecasts every sensor a week ahead, and a Streamlit dashboard that retrains itself weekly.',
+      tags: ['Python', 'dbt + DuckDB', 'LightGBM', 'Streamlit'],
       href: 'https://melbourne-on-foot-atmozki.streamlit.app',
       cta: 'Open the dashboard',
       img: melbourneImg,
